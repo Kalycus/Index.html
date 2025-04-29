@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>index.html</title>
+  <style>
+    body {
+      background-color: rgb(173, 230, 221);
+      font-family: Verdana, sans-serif;
+    }
+
+    h1 {
+      color: rgba(176, 32, 3, 0.518);
+      text-align: center;
+    }
+
+    p {
+      font-size: 25px;
+      text-align: justify;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 30px;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+    }
+
+    figure {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    figure img {
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 60%;
+      margin: 50px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #60ebb1;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    table img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 18px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Emerson Bezerra</h1>
+
+  <p>Meu nome é Emerson, tenho 52 anos e moro na cidade de Curitiba. Sou uma pessoa curiosa e sempre em busca de aprender coisas novas. Tenho grande interesse por tecnologia, música, esportes, literatura, arte, etc.</p>
+
+  <h2>Meus Hobbies</h2>
+
+  <ul>
+    <li>Xadrez</li>
+    <li>Artesanato</li>
+    <li>Tecnologia</li>
+  </ul>
+
+  <h2>Atividade Favorita</h2>
+
+  <figure>
+    <img class="img-foto1" src="./img/foto1.jpg" alt="Foto relacionada ao hobby de xadrez">
+    <figcaption>Jogar: Xadrez.</figcaption>
+  </figure>
+
+  <h2>Países para Visitar</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>Imagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Portugal</td>
+        <td><img src="https://static.significados.com.br/flags/pt.svg" alt="Bandeira de Portugal"></td>
+      </tr>
+      <tr>
+        <td>Espanha</td>
+        <td><img src="https://static.significados.com.br/flags/es.svg" alt="Bandeira da Espanha"></td>
+      </tr>
+      <tr>
+        <td>Itália</td>
+        <td><img src="https://static.significados.com.br/flags/it.svg" alt="Bandeira da Itália"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="https://www.tecmundo.com.br" target="_blank" rel="noopener noreferrer">
+    Visite o TecMundo para notícias de tecnologia!
+  </a>
+
+  <button id="meuBotao">Clique para ver uma mensagem!</button>
+
+  <p id="mensagem" style="display:none;">"Acredite em si mesmo e todo o resto virá naturalmente!"</p>
+
+  <script>
+    document.getElementById('meuBotao').addEventListener('click', function() {
+      document.getElementById('mensagem').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
